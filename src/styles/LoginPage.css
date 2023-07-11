@@ -1,0 +1,75 @@
+.form-container {
+    position: relative;
+    width: 620px;
+    height: 463px;
+    top: 281px;
+    left: 409px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttons-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    width: 313px;
+    height: 60px;
+    top: 281px;
+    left: 409px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button.active {
+    background-color: #eee;
+}
+
+.text-field1 {
+    width: 445px;
+    height: 48px;
+    top: 429px;
+    left: 494px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.text-field2 {
+    width: 445px;
+    height: 48px;
+    top: 494px;
+    left: 494px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.text-field3 {
+    width: 445px;
+    height: 48px;
+    top: 568px;
+    left: 494px;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
