@@ -19,17 +19,26 @@ const ContactPage = () => {
       url: "https://restaurant-reservation-app-api.onrender.com/get-reservations",
       withCredentials: true,
     })
-      .then((res) => {
-        if (!res.data.reservations) {
-          alert(res.data.msg);
-        } else {
-          res.data.reservations.map(
-            (reservation) =>
-              (reservation.date = new Date(reservation.date).toDateString())
+      .then(
+        (res) => {
+          if (!res.data.reservations) {
+            alert(res.data.msg);
+          } else {
+            res.data.reservations.map(
+              (reservation) =>
+                (reservation.date = new Date(reservation.date).toDateString())
+            );
+            setBookings(res.data.reservations);
+          }
+        },
+        (error) => {
+          alert(
+            error.response.data.errors
+              ? error.response.data.errors[0].msg
+              : error.response.data.msg
           );
-          setBookings(res.data.reservations);
         }
-      })
+      )
       .finally(() => {
         setLoading(false);
       });

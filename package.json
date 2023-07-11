@@ -2,6 +2,7 @@
   "name": "businessan-ds-application-2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://restaurant-reservation-app-nkn8.onrender.com",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@tailwindcss/forms": "0.4.0",
